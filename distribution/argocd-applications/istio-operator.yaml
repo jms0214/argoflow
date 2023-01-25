@@ -14,7 +14,8 @@ spec:
       - name: hub
         value: docker.io/istio
       - name: tag
-        value: 1.10.1 # istio/operator
+#        value: 1.10.1 # istio/operator
+        value: 1.14.6
   destination:
     server: 'https://kubernetes.default.svc'
     namespace: istio-operator
