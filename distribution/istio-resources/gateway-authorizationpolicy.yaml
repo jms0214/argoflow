@@ -17,5 +17,6 @@ spec:
   - to:
     - operation:
         hosts:
-        - kubeflow.my-cluster.my-domain.com
-        - serving.my-cluster.my-domain.com
+          #        - kubeflow.my-cluster.my-domain.com
+          #        - serving.my-cluster.my-domain.com
+        - '*'
