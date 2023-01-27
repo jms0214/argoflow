@@ -50,7 +50,7 @@ spec:
         value: "https://localhost:31170/realms/kubeflow/protocol/openid-connect/auth"
       - name: extraArgs.redeem-url
         #value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/token"
-        value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/token"
+        value: "https://localhost:31170/realms/kubeflow/protocol/openid-connect/token"
       - name: extraArgs.profile-url
         #value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
         value: "https://localhost:31170/realms/kubeflow/protocol/openid-connect/userinfo"
