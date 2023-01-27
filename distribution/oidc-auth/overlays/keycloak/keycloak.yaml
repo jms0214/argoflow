@@ -36,7 +36,8 @@ spec:
       - name: extraEnvVars[0].value
         value: "-Dkeycloak.import=/config/kubeflow-realm.json"
       - name: service.type
-        value: ClusterIP
+        #value: ClusterIP
+        value: NodePort
       - name: service.port
         value: "8080"
       - name: service.httpsPort
