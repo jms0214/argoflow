@@ -18,7 +18,8 @@ spec:
     tls:
       httpsRedirect: true
   - hosts:
-    - kubeflow.my-cluster.my-domain.com
+    #    - kubeflow.my-cluster.my-domain.com
+    - '*'
     port:
       name: https
       number: 443
