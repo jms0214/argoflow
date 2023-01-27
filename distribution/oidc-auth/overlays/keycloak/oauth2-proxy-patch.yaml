@@ -40,17 +40,23 @@ spec:
       - name: extraArgs.skip-provider-button
         value: "true"
       - name: extraArgs.cookie-domain
-        value: .my-cluster.my-domain.com
+        #value: .my-cluster.my-domain.com
+        value: "*"
       - name: extraArgs.whitelist-domain
-        value: .my-cluster.my-domain.com
+        #value: .my-cluster.my-domain.com
+        value: "*"
       - name: extraArgs.login-url
-        value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/auth"
+        #value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/auth"
+        value: "https://localhost:31170/realms/kubeflow/protocol/openid-connect/auth"
       - name: extraArgs.redeem-url
+        #value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/token"
         value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/token"
       - name: extraArgs.profile-url
-        value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+        #value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+        value: "https://localhost:31170/realms/kubeflow/protocol/openid-connect/userinfo"
       - name: extraArgs.validate-url
-        value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+        #value: "https://auth.my-cluster.my-domain.com/auth/realms/kubeflow/protocol/openid-connect/userinfo"
+        value: "https://localhost:31170/realms/kubeflow/protocol/openid-connect/userinfo"
       - name: extraArgs.scope
         value: email
       - name: extraArgs.scope
