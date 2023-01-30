@@ -8,14 +8,14 @@
     "requiredCredentials": [ "password" ],
     "users" : [
         {
-            "username" : "",
+            "username" : "admin",
             "enabled": true,
             "email" : "",
             "firstName": "",
             "lastName": "",
             "credentials" : [
                 { "type" : "password",
-                  "value" : "" }
+                  "value" : "admin" }
             ],
             "realmRoles": [ "user" ],
             "clientRoles": {
@@ -66,7 +66,7 @@
     "clients": [
         {
             "id": "56185130-63f4-441f-b618-f471e7baac6d",
-            "clientId": "",
+            "clientId": "kubeflow",
             "name": "Oauth2 Proxy",
             "surrogateAuthRequired": false,
             "enabled": true,
