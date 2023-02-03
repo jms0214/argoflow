@@ -16,7 +16,8 @@ spec:
       protocol: HTTP
     # Upgrade HTTP to HTTPS
     tls:
-      httpsRedirect: true
+      #httpsRedirect: true
+      httpsRedirect: false
   - hosts:
     #    - kubeflow.my-cluster.my-domain.com
     - '*'
