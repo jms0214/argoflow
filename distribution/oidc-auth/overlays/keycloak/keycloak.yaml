@@ -16,7 +16,8 @@ spec:
       - name: auth.managementUser
         value: manager
       - name: proxyAddressForwarding
-        value: "true"
+        #value: "true"
+        value: "false"
       - name: auth.existingSecret
         value: keycloak-secret
       - name: postgresql.existingSecret
