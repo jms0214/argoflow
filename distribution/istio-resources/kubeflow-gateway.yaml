@@ -25,5 +25,6 @@ spec:
       number: 443
       protocol: HTTPS
     tls:
-      mode: SIMPLE
-      credentialName: kubeflow-ingressgateway-certs
+      mode: PASSTHROUGH
+      #mode: SIMPLE
+      #credentialName: kubeflow-ingressgateway-certs
