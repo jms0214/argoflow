@@ -22,11 +22,9 @@ spec:
       - name: extraArgs.provider
         value: keycloak
       - name: extraArgs.set-xauthrequest
-        #value: "true"
-        value: "false"
+        value: "true"
       - name: extraArgs.cookie-secure
-        #value: "true"
-        value: "false"
+        value: "true"
       - name: extraArgs.cookie-samesite
         value: lax
       - name: extraArgs.cookie-refresh
