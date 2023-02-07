@@ -15,17 +15,17 @@ spec:
       number: 80
       protocol: HTTP
     # Upgrade HTTP to HTTPS
-    #tls:
-      #httpsRedirect: true
+    tls:
+      httpsRedirect: true
       #httpsRedirect: false
-  #- hosts:
+  - hosts:
     #    - kubeflow.my-cluster.my-domain.com
-    #- '*'
-    #port:
-      #name: https
-      #number: 443
-      #protocol: HTTPS
-    #tls:
+    - '*'
+    port:
+      name: https
+      number: 443
+      protocol: HTTPS
+    tls:
       #mode: PASSTHROUGH
-      #mode: SIMPLE
-      #credentialName: kubeflow-ingressgateway-certs
+      mode: SIMPLE
+      credentialName: kubeflow-ingressgateway-certs
