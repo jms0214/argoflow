@@ -17,6 +17,7 @@ spec:
         - "kubeflow.my-cluster.my-domain.com" # needed for redirect after authentication
         - "serving.my-cluster.my-domain.com" # needed for redirect after authentication
         - "*.serving.my-cluster.my-domain.com" # needed for redirect after authentication
+        - "*"
 ---
 apiVersion: security.istio.io/v1beta1
 kind: AuthorizationPolicy
